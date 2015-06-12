@@ -347,9 +347,9 @@
 			
 		});
 
-		$(window).on('beforeunload', function() {
-		    window.scrollTo(0,document.body.scrollHeight);
-		});
+		window.onbeforeunload = function(e) {
+		  window.scrollTo(0,document.body.scrollHeight);
+		};
 
 		var height = $(document).height();
 		$depthNumber = $('.js-depth');
