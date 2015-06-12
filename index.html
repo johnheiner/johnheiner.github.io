@@ -337,7 +337,9 @@
 	<script type="text/javascript">
 		// start at bottom of page
 		$(document).ready(function() {
-			$('html, body').scrollTop( $('html, body').height() );
+			window.scrollTo(0,document.body.scrollHeight);
+			
+			// $('html, body').scrollTop( $('html, body').height() );
 		});
 		
 
