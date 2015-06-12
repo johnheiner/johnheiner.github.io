@@ -391,9 +391,9 @@
 
 			var start_pos = snippet.indexOf('Latest Observation:') + 20;
 			var end_pos = snippet.indexOf(' ',start_pos);
-			var depth = parseFloat(snippet.substring(start_pos,end_pos));
+			var depth = parseFloat(snippet.substring(start_pos,end_pos)).toFixed(2);
 
-			var decimal = snippet.substring(start_pos,end_pos);
+			var decimal = depth;
 
 			if($('html').hasClass('touch')) {
 				var scrollTop = $(window).scrollTop() - (winHeight/2);
