@@ -336,14 +336,15 @@
 	<script type="text/javascript">
 		// start at bottom of page
 		$(document).ready(function() {
-			var $target = $('html, body').outerHeight();
+			// var $target = $('html, body').outerHeight();
+			// $('html, body').scrollTop( $target );
 
 			// if($(window).scrollTop() + $(window).height() >= $(document).height()){
-			// 	window.scrollTo(0,document.body.scrollHeight);
+			window.scrollTo(0,document.body.scrollHeight);
 			// }
 				
 
-			$('html, body').scrollTop( $target );
+			
 		});
 		
 
