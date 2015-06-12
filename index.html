@@ -336,7 +336,15 @@
 	<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js'></script>
 	<script type="text/javascript">
 		// start at bottom of page
+		var height;
+		var startDepth = {depth:0.00};
+		var snippet;
 		$(document).ready(function() {
+			height = $(document).height();
+			$depthNumber = $('.js-depth');
+			$depth = $('.depth');
+			$loader = $('.js-loader');
+			
 			scrollBottom();
 		});
 
@@ -356,12 +364,7 @@
 			$('html, body').scrollTop(0);
 		};
 
-		var height = $(document).height();
-		$depthNumber = $('.js-depth');
-		$depth = $('.depth');
-		$loader = $('.js-loader');
-		var startDepth = {depth:0.00};
-		var snippet;
+		
 
 		$.jGFeed('http://water.weather.gov/ahps2/rss/obs/rmdv2.rss',
 			function(feeds) {
