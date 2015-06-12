@@ -340,9 +340,11 @@
 		});
 
 		function scrollBottom() {
-			var $target = $('html, body').outerHeight();
-			console.log($target);
-			$('html, body').scrollTop( $target );
+			// var $target = $('html, body').outerHeight();
+			// console.log($target);
+			// $('html, body').scrollTop( $target );
+
+			$('html, body').scrollTop($(".pad").offset().top);
 
 			// if($(window).scrollTop() + $(window).height() >= $(document).height()){
 			// window.scrollTo(0,document.body.scrollHeight);
