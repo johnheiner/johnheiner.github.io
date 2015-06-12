@@ -325,7 +325,7 @@
 	<div class="pad">
 		<div class="-loader js-loader">
 			<img src="http://samherbert.net/svg-loaders/svg-loaders/puff.svg">
-			<p>Getting the Depth...</p>
+			<p>Getting the depth of James River...</p>
 		</div>
 	</div>
 
@@ -337,9 +337,13 @@
 	<script type="text/javascript">
 		// start at bottom of page
 		$(document).ready(function() {
-			window.scrollTo(0,document.body.scrollHeight);
-			
-			// $('html, body').scrollTop( $('html, body').height() );
+
+			if($(window).scrollTop() + $(window).height() >= $(document).height()){
+				window.scrollTo(0,document.body.scrollHeight);
+			}
+				
+
+				// $('html, body').scrollTop( $('html, body').height() );
 		});
 		
 
