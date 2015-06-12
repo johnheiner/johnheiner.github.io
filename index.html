@@ -384,7 +384,7 @@
 
 			var decimal = snippet.substring(start_pos,end_pos);
 			var scrollTop = $(window).scrollTop();
-			var scrollPosition = scrollTop - (decimal.replace(/\./g, "") * 2); 	
+			var scrollPosition = scrollTop - (decimal.replace(/\./g, "") - (height/2); 	
 			var depthPosition = decimal.replace(/\./g, "");
 			console.log(scrollTop);
 			setTimeout(function(){
