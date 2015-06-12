@@ -339,12 +339,13 @@
 		var height;
 		var startDepth = {depth:0.00};
 		var snippet;
+
 		$(document).ready(function() {
 			height = $(document).height();
 			$depthNumber = $('.js-depth');
 			$depth = $('.depth');
 			$loader = $('.js-loader');
-			
+
 			scrollBottom();
 		});
 
@@ -387,9 +388,9 @@
 
 			var decimal = snippet.substring(start_pos,end_pos);
 			var scrollTop = $(window).scrollTop();
-			var scrollPosition = scrollTop - (decimal.replace(/\./g, "") - (height/2); 	
+			var scrollPosition = scrollTop - (decimal.replace(/\./g, "")) - (height/2); 	
 			var depthPosition = decimal.replace(/\./g, "");
-			console.log(scrollTop);
+			
 			setTimeout(function(){
 				animate(depth, scrollPosition, depthPosition);
 			}, 3000);
