@@ -394,7 +394,11 @@
 			var depth = parseFloat(snippet.substring(start_pos,end_pos));
 
 			var decimal = snippet.substring(start_pos,end_pos);
-			var scrollTop = $(window).scrollTop() - (winHeight/2);
+			if($('html').hasClass('touch')) {
+				var scrollTop = $(window).scrollTop() - (winHeight/2);
+			} else {
+				var scrollTop = $(window).scrollTop();
+			}
 			var scrollPosition = scrollTop - decimal.replace(/\./g, ""); 	
 			var depthPosition = decimal.replace(/\./g, "");
 			
