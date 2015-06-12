@@ -337,11 +337,13 @@
 	<script type="text/javascript">
 		// start at bottom of page
 		var height;
+		var winHeight;
 		var startDepth = {depth:0.00};
 		var snippet;
 
 		$(document).ready(function() {
 			height = $(document).height();
+			winHeight = $(window).height();
 			$depthNumber = $('.js-depth');
 			$depth = $('.depth');
 			$loader = $('.js-loader');
@@ -387,7 +389,7 @@
 			var depth = parseFloat(snippet.substring(start_pos,end_pos));
 
 			var decimal = snippet.substring(start_pos,end_pos);
-			var scrollTop = $(window).scrollTop() - (height/2);
+			var scrollTop = $(window).scrollTop() - (winHeight/2);
 			var scrollPosition = scrollTop - decimal.replace(/\./g, ""); 	
 			var depthPosition = decimal.replace(/\./g, "");
 			
