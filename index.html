@@ -336,7 +336,10 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js'></script>
 	<script type="text/javascript">
 		// start at bottom of page
-		$('html, body').scrollTop( $(document).height() );
+		$(document).ready(function() {
+			$('html, body').scrollTop( $(document).height() );
+		});
+		
 
 		var height = $(document).height();
 		$depthNumber = $('.js-depth');
