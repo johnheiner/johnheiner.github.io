@@ -230,6 +230,7 @@
 		  background: #045a5e;
 		  height: 50vh;
 		  position: relative;
+		  display:block;
 		}
 		.pad .-loader {
 		  position: absolute;
@@ -352,7 +353,7 @@
 		}
 
 		window.onbeforeunload = function(e) {
-			scrollBottom();
+			$('html, body').scrollTop(0);
 		};
 
 		var height = $(document).height();
@@ -368,7 +369,7 @@
 				if (feeds) {
 					snippet = feeds.entries[0].content;
 					parseFeed(snippet);
-					
+
 				} else {
 					// there was an error
 					return false; 
@@ -380,14 +381,14 @@
 			var start_pos = snippet.indexOf('Latest Observation:') + 20;
 			var end_pos = snippet.indexOf(' ',start_pos);
 			var depth = parseFloat(snippet.substring(start_pos,end_pos));
-			
+
 			var decimal = snippet.substring(start_pos,end_pos);
 			var scrollTop = $(window).scrollTop();
-			var scrollPosition = scrollTop - decimal.replace(/\./g, "");	
+			var scrollPosition = scrollTop - decimal.replace(/\./g, ""); 	
 			var depthPosition = decimal.replace(/\./g, "");
-			
+			console.log(scrollTop);
 			setTimeout(function(){
-		  		animate(depth, scrollPosition, depthPosition);
+				animate(depth, scrollPosition, depthPosition);
 			}, 3000);
 		}
 		function animate(depth, scrollPosition, depthPosition) {
@@ -396,25 +397,25 @@
 				opacity: 0,
 				ease: Power4.easeOut
 			});
-						
+
 			TweenMax.to(startDepth, 2.5, {
 				depth:"+="+ depth, 
 				onUpdate:updateDepth, 
 				ease:Power2.easeOut
 			});
-			
+
 			TweenMax.to($depth, 2.5, {
 				bottom: depthPosition,
 				ease:Power2.easeOut
 			});
-			
+
 			TweenMax.to(window, 2.5, {scrollTo:{y:scrollPosition, x:0, ease:Power2.easeOut}});
 		}
 
 		function updateDepth() {
 			var d = startDepth.depth;
 			var de = d.toFixed(2);
-		  	$depthNumber.html(de);
+			$depthNumber.html(de);
 		}
 	</script>
 </body>
