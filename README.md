@@ -20,3 +20,9 @@ Chenmed
  VCC
  YMCA
  UNboxed Technology
+
+
+#### Image Sizes
+Phone 320x568 = 640x1146
+Tablet 768x576 = 1536x1152
+Browser 1200x900 = 2400x1800 retina
