@@ -1,0 +1,82 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>ChenMed</h2>
+    <p>If you a chat feel free to contact me: <a href="#" class="underlined default">hi@johnheiner.com</a> kajb dslksaujdblkjsblsbjklsbdlkjsa bdjklabdljk bkjabdkjabd lkabdsbl dkasjbdlaskjdbaskjdbsljkdbb bb jkasfb kjsabjkdba kjlbsa db bas bas jbj bjk sblj</p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2016</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Jordan Schmidt</p>
+        </div>
+        <div class="roles__role">
+            <h3>Developer</h3>
+            <p>Jordan Maslyn</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Sarah Ferrara</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="#" class="underlined default">Visit Site</a></p>
+        </div>
+    </div>
+</div>
+
+<section class="grid">
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/chenmed/desktop.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/chenmed/phone1.jpg', 'projects/chenmed/phone2.jpg', 'projects/chenmed/phone3.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/chenmed/desktop.jpg', 'projects/chenmed/phone3.jpg') }}
+    </div>
+    {# <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/chenmed/phone3.jpg') }}
+    </div> #}
+</section>
+
+<div class="content content--pad container">
+    <h2>Process</h2>
+</div>
+
+<section class="grid">
+    {# <div class="grid__cell grid__cell--half">
+        {{ imageSet('/images/projects/chenmed/resize/slider--half', '50vw') }}
+    </div> #}
+    <div class="grid__cell">
+        {{ imageSet('/images/projects/chenmed/resize/home', '100vw') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ imageSet('/images/projects/chenmed/resize/search', '100vw') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ imageSet('/images/projects/chenmed/resize/map', '100vw') }}
+    </div>
+    {# <div class="grid__cell grid__cell--half">
+        {{ imageSet('/images/projects/chenmed/resize/button--half', '50vw') }}
+    </div> #}
+</section>
+
+<div class="content content--pad container">
+    <p><a href="/" class="underlined default">Back</a>
+</div>
+
+{% endblock %}

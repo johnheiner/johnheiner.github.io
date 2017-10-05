@@ -1,0 +1,4 @@
+.container{
+    @include lock('padding-left', 24px, 120px);
+    @include lock('padding-right', 24px, 120px);
+}

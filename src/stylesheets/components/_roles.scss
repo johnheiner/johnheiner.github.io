@@ -1,0 +1,12 @@
+.roles{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 60em;
+
+    &__role{
+        // width: 25%;
+        flex: 0 1 auto;
+        padding-right: 30px;
+    }
+}

@@ -1,0 +1,24 @@
+{% extends '_layouts/application.html' %} 
+{% block body %}
+    {% for project in projects %}
+    {% if project.enabled %}
+    <div data-slug="{{project.slug}}" class="project-image" style="background-image: url({{project.featuredImg}}.jpg)"></div>
+    {% endif %}
+    {% endfor %}
+{% endblock %}
+{% block content %}
+
+
+
+<div class="content container">
+    
+    <p>Hi,<br> I'm a front-end designer. I concept, strategize, design, and build digital products and solutions.</p>
+
+    <p>I live in Richmond, Virginia with my wife and daughter where I work as a designer and developer at COLAB. If you'd like to chat, just shoot me an email at <a href="mailto:hi@johnheiner.com" class="underlined default">hi@johnheiner.com</a></p>
+
+    {# <h2>Projects</h2>
+    {% include "_shared/project-list.html" %} #}
+    
+</div>
+
+{% endblock %}

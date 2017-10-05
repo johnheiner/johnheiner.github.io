@@ -1,0 +1,9 @@
+<ul class="project-list">
+    {% for project in projects %}
+    {% if project.enabled %}
+    <li>
+        <a href="{{ project.url }}" class="underlined default" data-target-slug="{{project.slug}}">{{project.title}}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,32 @@
+/**
+ * Mixins
+ *
+ * Feel free to use whatever custom mixins you choose.
+ * Please comment about the context of each mixin and keep them here to stay organized!
+ *
+ * @package Carbon
+ * @subpackage SCSS
+ * @since 2.0.0
+ */
+
+ // Carbon Toolbox (use as needed)
+@import "../toolbox/mixins/aspect_ratio";
+@import "../toolbox/mixins/clear";
+@import "../toolbox/mixins/cover";
+@import "../toolbox/mixins/firefox";
+@import "../toolbox/mixins/font-face";
+@import "../toolbox/mixins/grid";
+@import "../toolbox/mixins/ie10_up";
+@import "../toolbox/mixins/input_placeholders";
+@import "../toolbox/mixins/lock";
+@import "../toolbox/mixins/media_queries";
+@import "../toolbox/mixins/quantity_queries";
+@import "../toolbox/mixins/visually_hidden";
+
+// Custom Mixins
+@mixin transition() {
+    transition: 600ms $ease_out;
+    &:hover {
+        transition: 400ms $ease_out;
+    }
+}

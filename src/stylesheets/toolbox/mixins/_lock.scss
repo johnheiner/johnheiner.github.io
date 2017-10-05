@@ -1,0 +1,56 @@
+/**
+ * CSS Lock
+ *
+ *
+ * @description
+ * In canal and river navigation, a lock is a device used for raising and 
+ * lowering vessels between stretches of water that are at different levels.
+ *
+ * To fluctuate between two values depending on the screen width.
+ *
+ * 
+ * @illustration
+ *                   |               *|**********************
+ *                   |          *     |
+ *                   |     *          |
+ * ******************|*               |
+ * $min-px           $bottom-gate     $top-gate       $max-px
+ *
+ *
+ * @variables
+ * $min-px: minimum element $property size in pixels
+ * $max-px: maximum element $property size in pixels
+ * $bottom-gate: the screen width in pixels where you want to just use the value in $min-px
+ * $top-gate: the screen width in pixels where you want to just use the value in $max-px
+ * $property: the property of the element that you would like to lock
+ *
+ *
+ * @usage
+ *
+ * Using Default Values
+ * @include lock('font-size', 14px, 20px);
+ *
+ * Using Custom 'Gate' Values
+ * @include lock('line-height', 14px, 20px, 960px, 1280px);
+ *
+ * @depends on
+ * strip_units();
+ *
+ */
+ 
+
+@function strip_units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+@mixin lock($property, $min-px, $max-px, $bottom-gate: 320px, $top-gate: 1440px) {
+
+#{$property}: calc(#{$min-px} + (#{strip_units($max-px - $min-px)}) * ((100vw - #{$bottom-gate}) / (#{strip_units($top-gate - $bottom-gate)})));
+  
+  @media screen and (max-width: $bottom-gate) {
+    #{$property}: #{$min-px};
+  }
+  @media screen and (min-width: $top-gate){
+    #{$property}: #{$max-px};
+  }
+}

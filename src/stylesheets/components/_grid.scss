@@ -1,0 +1,17 @@
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__cell{
+        width: 100%;
+        &--half{
+           @media screen and (min-width: 900px) {
+               width: 50%;
+           }
+        }
+        &--content{
+            // @include containerPad;
+        }
+    }
+}

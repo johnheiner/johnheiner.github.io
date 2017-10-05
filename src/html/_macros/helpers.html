@@ -1,0 +1,57 @@
+{% macro sprite(id, viewBox, classes) %}
+	{% set viewBox = viewBox or "0 0 1 1"%}
+		<svg class="{{classes}}" viewBox="{{viewBox}}"><use xlink:href='/images/icons.svg#{{id}}' /></use></svg>
+{% endmacro %}
+
+{% macro imageSet(path, size) %}
+	{# path == Full path of original image #}
+	{# size can be either 50vw or 100vw depending on layout #}
+	<img class="{{classes}}" src="{{path}}-2880.jpg" alt="{{alt}}" srcset="{{path}}-2880.jpg 2880w, {{path}}-360.jpg 360w, {{path}}-720.jpg 720w, {{path}}-1440.jpg 1440w, {{path}}-2160.jpg 2160w" sizes="(min-width: 720px) {{size}}, 100vw">
+	{#[360, 720, 1440, 2160, 2880]#}
+{% endmacro %}
+
+{% macro halfPhone(bgcolor, deviceColor, path) %}
+	{% set bgcolor = bgcolor or "#000" %}
+	<svg xmlns="http://www.w3.org/2000/svg" width="50%" viewBox="0 0 1440 2000" style="background-color: {{bgcolor}};">
+		<use fill="{{deviceColor}}" xlink:href='/images/icons.svg#half-phone' /></use>
+		<!--<rect x="401" y="423" fill="#ED2224" width="640" height="1146"/>-->
+		<image x="401" y="423" width="640" height="1146" xlink:href="/images/{{path}}"></image>
+	</svg>
+{% endmacro %}
+
+{% macro fullBrowser(bgcolor, deviceColor, path) %}
+	{% set bgcolor = bgcolor or "#000" %}
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 2000" style="background-color: {{bgcolor}};">
+		<use fill="{{deviceColor}}" xlink:href='/images/icons.svg#full-browser' /></use>
+		<!--<rect id="screen" x="360" y="370" display="inline" fill="#ED2224" width="2160" height="1350"/>-->
+		<image x="360" y="370" width="2160" height="1350" xlink:href="/images/{{path}}"></image>
+	</svg>
+{% endmacro %}
+
+{% macro fullBrowserPhone(bgcolor, deviceColor, browserpath, phonepath) %}
+	{% set bgcolor = bgcolor or "#000" %}
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 2000" style="background-color: {{bgcolor}};">
+		<use fill="{{deviceColor}}" xlink:href='/images/icons.svg#full-bp-browser' /></use>
+		<!--<rect x="368.271" y="404.285" fill="#ED2224" width="1943.906" height="1214.941"/>-->
+		<image x="368.271" y="404.285" width="1943.906" height="1214.941" xlink:href="/images/{{browserpath}}"></image>
+
+		<use fill="{{deviceColor}}" xlink:href='/images/icons.svg#full-bp-phone' /></use>
+		<!--<rect x="2074.045" y="860.927" fill="#CE2028" width="378.549" height="677.84"/>-->
+		<image x="2074.045" y="860.927" width="378.549" height="677.84" xlink:href="/images/{{phonepath}}"></image>
+	</svg>
+{% endmacro %}
+
+{% macro fullPhone3up(bgcolor, deviceColor, phonepath1, phonepath2, phonepath3)%}
+	{% set bgcolor = bgcolor or "#000" %}
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 1600" style="background-color: {{bgcolor}};">
+		<use fill="{{deviceColor}}" xlink:href='/images/icons.svg#full-phone-3up' /></use>
+		<!--<rect x="2055.738" y="431.079" fill="#ED2224" width="409.806" height="733.808"/>-->
+		<image x="2055.738" y="431.079" width="409.806" height="733.808" xlink:href="/images/{{phonepath3}}"></image>
+
+		<!--<rect x="1235.738" y="431.079" fill="#ED2224" width="409.806" height="733.808"/>-->
+		<image x="1235.738" y="431.079" width="409.806" height="733.808" xlink:href="/images/{{phonepath2}}"></image>
+		<!--<rect x="415.738" y="431.079" fill="#ED2224" width="409.806" height="733.808"/>-->
+		<image x="415.738" y="431.079" width="409.806" height="733.808" xlink:href="/images/{{phonepath1}}"></image>
+	</svg>
+{% endmacro %}
+
