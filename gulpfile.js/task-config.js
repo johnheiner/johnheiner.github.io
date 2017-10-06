@@ -53,6 +53,8 @@ module.exports = {
         rev: true
     },
 
+    static: true,
+
     watch: {
         gulpWatch: {
             usePolling: false
