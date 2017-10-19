@@ -1,0 +1,101 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Medstar Union Memorial Orthopedics</h2>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2016</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://www.medstarunionortho.org/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer</p>
+        </div>
+        <div class="roles__role">
+            <h3>Strategist, Lead Developer, Project Lead</h3>
+            <p>Josh Scarborough</p>
+        </div>
+        <div class="roles__role">
+            <h3>Developer</h3>
+            <p>Jordan Maslyn</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Caitlyn Mayers</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Mike Colicchio</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/medstar/desktop/home1.jpg', 'projects/medstar/mobile/home.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/medstar/mobile/home--nav.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/medstar/mobile/home--search.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/medstar/mobile/filters.jpg', 'projects/medstar/mobile/home--carousel.jpg', 'projects/medstar/mobile/doctors.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/home6.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/home--search.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/conditions.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/conditions2.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/doctors1.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/doctors2.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/doctors3.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/doctors4.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/doctors1.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/doctor-single.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/medstar/desktop/locations.jpg') }}
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

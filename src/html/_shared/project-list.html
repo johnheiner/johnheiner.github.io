@@ -2,7 +2,7 @@
     {% for project in projects %}
     {% if project.enabled %}
     <li>
-        <a href="{{ project.url }}" class="underlined default" data-target-slug="{{project.slug}}">{{project.title}}</a>
+        <a href="{{ project.url }}"  data-target-slug="{{project.slug}}">{{project.title}}</a>
     </li>
     {% endif %}
     {% endfor %}

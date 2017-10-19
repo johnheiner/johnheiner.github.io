@@ -1,0 +1,56 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Unboxed Technology</h2>
+    <p>Unboxed has an incredible amount of depth in their products and services. The number of products they build and maintain and the comprehensive list of services they offer to help support and bring their products to life are impressive. Our first challenge was to really understand exactly what Unboxed does — the products they build, the needs those products meet, the relationships between the products — and to then figure out how all of the services they offer fit into who they are and what they create. After putting all of these pieces into place, our next challenge was to create an engaging, modular and expandable, fully CMSed website that was easy to use, clearly communicated their message and embodied the energy, excitement and personality of Unboxed. <a href="https://www.teamcolab.com/portfolio/unboxed/" >View Full Case Study</a></p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2015</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://www.unboxedtechnology.com/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer, Developer, Project Lead</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Caitlyn Mayers</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Sarah Sheldon</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/unboxed/desktop/home.jpg', 'projects/unboxed/mobile/home.jpg') }}
+    </div>
+
+    <div class="grid__cell grid__cell--content grid__cell--centered">
+        <a href="https://www.teamcolab.com/portfolio/unboxed/" >View Full Case Study</a>
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

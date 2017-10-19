@@ -1,0 +1,75 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>The Winebow Group</h2>
+    <p>In our discovery and strategy work, it became clear that, because the new company was so new, so large, and such a recent conglomeration of so many brands and products, that The Winebow Group needed guided strategic review in order to identify, define, and prioritize their goals and central brand voice across multiple brands. <a href="https://www.teamcolab.com/portfolio/the-winebow-group/" >View Full Case Study</a></p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2016</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://www.thewinebowgroup.com/" >Visit Site</a></p>
+        </div>
+    </div>
+    
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer, Developer, Project Lead</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Jereme Yoho</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Sarah Sheldon</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/winebow/desktop/home.jpg', 'projects/winebow/mobile/home.jpg') }}
+    </div>
+    
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/winebow/desktop/story.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/winebow/desktop/wine-footer.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/winebow/desktop/brands.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/winebow/desktop/brands3.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/winebow/desktop/products3.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ fullBrowser('#000', '#fff','projects/winebow/desktop/bottle.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--content grid__cell--centered">
+        <a href="https://www.teamcolab.com/portfolio/the-winebow-group/" >View Full Case Study</a>
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

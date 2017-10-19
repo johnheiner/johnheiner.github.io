@@ -1,0 +1,66 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Call Federal Credit Union</h2>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2017</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://callfederal.org/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Developer, Project Lead</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Cesley Musngi</p>
+        </div>
+        <div class="roles__role">
+            <h3>Programmer</h3>
+            <p>Jesse Tolj</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Kayla Lupino</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/call-federal/desktop/locations.jpg', 'projects/call-federal/mobile/locations.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/call-federal/mobile/home.jpg', 'projects/call-federal/mobile/home--nav.jpg', 'projects/call-federal/mobile/home--nav-products.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/call-federal/desktop/home.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/call-federal/mobile/locations.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/call-federal/mobile/locations--filter.jpg') }}
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Print N Play</h2>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2016</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://www.printnplay.com/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer, Developer, Project Lead</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Jereme Yoho</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Caitlyn Mayers</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Sarah Ferrara</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    <div class="grid__cell">
+    {{ fullBrowserPhone('#000', '#fff', 'projects/print-n-play/desktop/home.jpg', 'projects/print-n-play/mobile/home.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/print-n-play/mobile/home.jpg', 'projects/print-n-play/mobile/nav.jpg', 'projects/print-n-play/mobile/nav--complete.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/print-n-play/mobile/intro.jpg', 'projects/print-n-play/mobile/interstitial.jpg', 'projects/print-n-play/mobile/le.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/print-n-play/mobile/le--money.jpg', 'projects/print-n-play/mobile/game.jpg', 'projects/print-n-play/mobile/game--instructions.jpg') }}
+    </div>
+    
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

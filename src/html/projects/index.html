@@ -1,0 +1,20 @@
+{% extends '_layouts/application.html' %} 
+{% block body %}
+    <div class="project-image-wrap">
+        {% for project in projects %}
+        {% if project.enabled %}
+        <div data-slug="{{project.slug}}" class="project-image" style="background-image: url({{project.featuredImg}}.jpg)"></div>
+        {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
+{% block content %}
+
+<div class="content container">
+
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+    
+</div>
+
+{% endblock %}

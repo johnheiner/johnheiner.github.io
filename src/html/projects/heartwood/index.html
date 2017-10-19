@@ -1,0 +1,54 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Heartwood Wealth Advisors</h2>
+    <p>Heartwood's new, responsive website leverages some of the web's cutting-edge technologies and practices, such as pushstate page loads, which allowed us to create an experience that feels fluid, seamless and fast. <a href="https://www.teamcolab.com/portfolio/heartwood/" >View Full Case Study</a></p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2014</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="http://www.heartwoodva.com/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer, Developer, Project Lead</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Scott Diperna</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/heartwood/desktop/home.jpg', 'projects/heartwood/mobile/home.jpg') }}
+    </div>
+    <div class="grid__cell">
+    {{ fullPhone3up('#000', '#fff', 'projects/heartwood/mobile/home.jpg', 'projects/heartwood/mobile/nav.jpg', 'projects/heartwood/mobile/contact.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--content grid__cell--centered">
+        <a href="https://www.teamcolab.com/portfolio/heartwood/" >View Full Case Study</a>
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>LCLD CRM</h2>
+    <p>A custom CRM solution for LCLD staff. This project is still in development. <a href="/lcld-prototype" target="_blank">View Prototype</a></p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2017</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Designer, Developer</p>
+        </div>
+        <div class="roles__role">
+            <h3>Programmer</h3>
+            <p>Francis Yaconiello</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Gavin Wright</p>
+        </div>
+    </div>
+</div>
+
+<section class="grid">
+    
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/lcld-crm/desktop/home.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/lcld-crm/desktop/member.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--content grid__cell--centered">
+        <a href="/lcld-prototype" target="_blank">View Prototype</a>
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

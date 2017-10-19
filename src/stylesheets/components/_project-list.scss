@@ -3,16 +3,34 @@
     padding: 0;
     list-style: none;
 }
+.project-image-wrap{
+    position: fixed;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    &:after{
+        content: '';
+        @include cover;
+        background-image: linear-gradient(to right, rgba($black, 0.8), rgba($black, 0.5));
+    }
+}
 .project-image{
     position: fixed;
     pointer-events: none;
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    transition: all 1500ms ease;
+    transform-origin: 0 0;
+    transform: none;
+    transition: opacity 500ms ease, transform 10s ;
 	opacity: 0;
 
     &--active{
-        opacity: 0.1;
+        transform: scale(1.05);
+        transition: opacity 1500ms ease, transform 10s ;
+        opacity: 0.4;
+        // transition: opacity 1500ms ease, transform 10s ease;
     }
 }

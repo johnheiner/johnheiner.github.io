@@ -11,7 +11,16 @@
            }
         }
         &--content{
-            // @include containerPad;
+            @include lock('padding-top', 36px, 150px);
+            @include lock('padding-bottom', 36px, 150px);
+        }
+        &--centered{
+            text-align: center;
+        }
+        img{
+            border-style: solid;
+            border-color: $black;
+            @include lock('border-width', 16px, 36px);
         }
     }
 }

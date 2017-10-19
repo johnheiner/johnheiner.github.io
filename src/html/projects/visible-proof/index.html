@@ -1,0 +1,69 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Visible Proof</h2>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2016</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="http://visible-proof.net" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Developer, Project Lead</p>
+        </div>
+        <div class="roles__role">
+            <h3>Strategist, Designer</h3>
+            <p>Jordan Schmidt</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Mike Colicchio</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/visible-proof/desktop/home.jpg', 'projects/visible-proof/mobile/home.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/visible-proof/desktop/projects.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/visible-proof/desktop/project.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/visible-proof/desktop/project2.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/visible-proof/desktop/project3.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/visible-proof/desktop/project4.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/visible-proof/mobile/cards.jpg', 'projects/visible-proof/mobile/project.jpg', 'projects/visible-proof/mobile/project--detail.jpg') }}
+    </div>
+</section>
+
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

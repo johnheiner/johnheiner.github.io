@@ -1,0 +1,70 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>JenCare</h2>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2016</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://www.jencaremed.com/">Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Lead Designer</p>
+        </div>
+        <div class="roles__role">
+            <h3>Designer</h3>
+            <p>Jordan Schmidt</p>
+        </div>
+        <div class="roles__role">
+            <h3>Developer</h3>
+            <p>Jordan Maslyn</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Sarah Ferrara</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/jencare/desktop/home.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/jencare/mobile/home.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--half">
+        {{ halfPhone('#000', '#fff', 'projects/jencare/mobile/nav.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/jencare/desktop/locations.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/jencare/desktop/carousel.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/jencare/desktop/search.jpg') }}
+    </div>
+    
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

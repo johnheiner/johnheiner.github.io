@@ -6,198 +6,86 @@
     "codepen": "#codepen"
   },
   "navigation": {
-    "About" : "/about/",
-    "Resume" : "/resume/"
+    "About": "/about/",
+    "Resume": "/resume/"
   },
-  "projects" : [
+  "projects": [
     {
-      "title": "ChenMed",
-      "slug" : "chenmed",
-      "url": "/chenmed/",
-      "color": "#66BC46",
-      "palette":{
-        "primary": [
-          "#68BD46",
-          "#03a7e0",
-          "#cb2b99"
-        ],
-        "secondary":[
-          "#d6d6d6",
-          "#f5f5f5",
-          "#414953",
-          "#343a42"
-        ]
-      },
-      "description": "<p><strong>Hi, I'm John.</strong><br> I'm a front-end designer, digital designer, creative developer, whatever you want to call it. I concept, strategize, design, and build digital products and solutions. I live in Richmond, Virginia where I work as the Design Lead at COLAB, a digital agency.</p><p>I have several years experience in web strategy, UX, visual design, animations, development, and CMS integrations. If you'd like to know more about me, or my work, just shoot me an email at <a href=\"mailto:hi@johnheiner.com\" class=\"underlined default\">hi@johnheiner.com</a>, or explore some of my selected projects below. Thanks for stopping by.</p>",
-      "date": "July 2016",
-      "live-link": "http://www.chenmed.com",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "meta": [
-        {
-          "title": "My Role(s)",
-          "content": "Strategist, Lead Designer"
-        },{
-          "title": "Designer",
-          "content": "Jordan Schmidt"
-        },{
-          "title": "Developer",
-          "content": "Jordan Maslyn"
-        },{
-          "title": "Project Manager",
-          "content": "Sarah Ferrara"
-        },{
-          "title": "Agency",
-          "content": "COLAB"
-        }
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/home",
+      "title": "LCLD CRM",
+      "slug": "lcld-crm",
+      "url": "/projects/lcld-crm/",
+      "featuredImg": "/images/projects/lcld-crm/desktop/home",
       "enabled": true
-    },{
-      "title": "MedStar Union Memorial Hospital Orthopedics",
-      "color": "#0e62a8",
-      "slug" : "medstar",
-      "url": "/medstar/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.medstar.com",
-      "tags": [
-        "Strategy",
-        "Design"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/search",
-      "enabled": true
-    },{
+    },
+    {
       "title": "The Winebow Group",
-      "color": "#9b2242",
-      "slug" : "the-winebow-group",
-      "url": "/the-winebow-group/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.winebow.com",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/home",
+      "slug": "the-winebow-group",
+      "url": "/projects/the-winebow-group/",
+      "featuredImg": "/images/projects/winebow/featured",
       "enabled": true
-    },{
+    },
+    {
+      "title": "Call Federal Credit Union",
+      "slug": "call-federal",
+      "url": "/projects/call-federal/",
+      "featuredImg": "/images/projects/call-federal/desktop/locations",
+      "enabled": true
+    },
+    {
+      "title": "Visible Proof",
+      "slug": "visible-proof",
+      "url": "/projects/visible-proof/",
+      "featuredImg": "/images/projects/visible-proof/featured",
+      "enabled": true
+    },
+    {
+      "title": "MedStar Union Memorial Hospital Orthopedics",
+      "slug": "medstar",
+      "url": "/projects/medstar/",
+      "featuredImg": "/images/projects/medstar/featured",
+      "enabled": true
+    },
+    {
+      "title": "JenCare",
+      "slug": "jencare",
+      "url": "/projects/jencare/",
+      "featuredImg": "/images/projects/jencare/desktop/home",
+      "enabled": true
+    },
+    {
       "title": "Print n Play",
-      "color": "#ef9434",
-      "slug" : "print-n-play",
-      "url": "/print-n-play/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.printnplay.com",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/button--half",
+      "slug": "print-n-play",
+      "url": "/projects/print-n-play/",
+      "featuredImg": "/images/projects/print-n-play/desktop/home",
       "enabled": true
-    },{
-      "title": "YMCA Richmond",
-      "color": "#C6168D",
-      "slug" : "ymca-richmond",
-      "url": "/ymca-richmond/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.ymcarichmond.org",
-      "tags": [
-        "Strategy",
-        "Development"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/map",
-      "enabled": false
-    },{
+    },
+    {
       "title": "Sports Backers",
-      "color": "#0175c0",
-      "slug" : "sports-backers",
-      "url": "/sports-backers/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.sportsbackers.org",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/slider--half",
-      "enabled": false
-    },{
-      "title": "Unboxed Technology",
-      "color": "#6f7dbc",
-      "slug" : "unboxed-technology",
-      "url": "/unboxed-technology/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.unboxedtechnology.com",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/search",
+      "slug": "sports-backers",
+      "url": "/projects/sports-backers/",
+      "featuredImg": "/images/projects/sports-backers/desktop/home",
       "enabled": true
-    },{
-      "title": "Heartwood Wealth Advisors",
-      "color": "#3e8eb8",
-      "slug" : "heartwood",
-      "url": "/heartwood/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.heartwood.com",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "featuredImg": "/images/projects/chenmed/resize/map",
-      "enabled": false
-    },{
+    },
+    {
+      "title": "Unboxed Technology",
+      "slug": "unboxed-technology",
+      "url": "/projects/unboxed-technology/",
+      "featuredImg": "/images/projects/unboxed/desktop/home",
+      "enabled": true
+    },
+    {
       "title": "LCLD",
-      "color": "#02aa81",
-      "slug" : "lcld",
-      "url": "/lcld/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.lcldnet.org",
-      "tags": [
-        "Strategy",
-        "Design",
-        "Development"
-      ],
-      "enabled": false
-    },{
-      "title": "Elk Hill",
-      "color": "#44b4c3",
-      "slug" : "elk-hill",
-      "url": "/elk-hill/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.elkhill.org",
-      "tags": [
-        "Strategy",
-        "Development"
-      ],
-      "enabled": false
-    },{
-      "title": "Cuisine Solutions",
-      "slug" : "cuisine-solutions",
-      "color": "#ec1b2e",
-      "url": "/cuisine-solutions/",
-      "description": "<p>Description text in a paragraph tag</p>",
-      "date": "July 2016",
-      "live-link": "http://www.mycuisinesolutions.com",
-      "tags": [
-        "Development"
-      ],
-      "enabled": false
+      "slug": "lcld",
+      "url": "/projects/lcld/",
+      "featuredImg": "/images/projects/lcld/desktop/home",
+      "enabled": true
+    },
+    {
+      "title": "Heartwood Wealth Advisors",
+      "slug": "heartwood",
+      "url": "/projects/heartwood/",
+      "featuredImg": "/images/projects/heartwood/desktop/home",
+      "enabled": true
     }
   ]
 }

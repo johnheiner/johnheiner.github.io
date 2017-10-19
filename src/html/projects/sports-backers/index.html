@@ -1,0 +1,60 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>Sports Backers</h2>
+    <p>Sports Backers pursues a goal to transform greater Richmond into the most physically active community in the nation by leading the area in embracing and celebrating an active lifestyle. Their Events and Programs are designed to foster active lifestyles for everyone.</p>
+    <p>In terms of design, we paid great attention to menuing and site navigation, especially given the need for making a site that is simple to use on mobile smartphones and tablet devices. Also of critical importance was large visuals to convey the spirit of the events, and large, clear calls to action to encourage visitors to register for races. <a href="https://www.teamcolab.com/portfolio/sports-backers/" >View Full Case Study</a></p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2014</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="https://www.sportsbackers.org/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Designer, Developer</p>
+        </div>
+        <div class="roles__role">
+            <h3>Developer</h3>
+            <p>Jorge Silva</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Scott Diperna</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    
+    <div class="grid__cell">
+        {{ fullBrowser('#000', '#fff','projects/sports-backers/desktop/home.jpg') }}
+    </div>
+    <div class="grid__cell">
+    {{ fullPhone3up('#000', '#fff', 'projects/sports-backers/mobile/home.jpg', 'projects/sports-backers/mobile/nav.jpg', 'projects/sports-backers/mobile/nav--events.jpg') }}
+    </div>
+
+    <div class="grid__cell grid__cell--content grid__cell--centered">
+        <a href="https://www.teamcolab.com/portfolio/sports-backers/" >View Full Case Study</a>
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

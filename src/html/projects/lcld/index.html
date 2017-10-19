@@ -1,0 +1,58 @@
+{% extends '_layouts/application.html' %}
+
+{% block content %}
+
+<div class="content container">
+    <h2>LCLD</h2>
+    <p>For an organization dedicated to diversity in the legal profession, especially one focused on supporting young lawyers in the early stages of their careers, the LCLD website needed to reflect the dynamic and vibrant energy of its people and programming. <a href="https://www.teamcolab.com/portfolio/lcld/" >View Full Case Study</a></p>
+
+    <div class="roles">
+        <div class="roles__role">
+            <h3>Year</h3>
+            <p>2014</p>
+        </div>
+        <div class="roles__role">
+            <h3>Agency</h3>
+            <p>COLAB</p>
+        </div>
+        <div class="roles__role">
+            <h3>URL</h3>
+            <p><a href="http://www.lcldnet.org/" >Visit Site</a></p>
+        </div>
+    </div>
+    <div class="roles">
+        <div class="roles__role">
+            <h3>My Role(s)</h3>
+            <p>Strategist, Designer, Developer</p>
+        </div>
+        <div class="roles__role">
+            <h3>Programmer</h3>
+            <p>Francis Yaconiello</p>
+        </div>
+        <div class="roles__role">
+            <h3>Project Manager</h3>
+            <p>Scott Diperna</p>
+        </div>
+        
+    </div>
+</div>
+
+<section class="grid">
+    
+    <div class="grid__cell">
+        {{ fullBrowserPhone('#000', '#fff', 'projects/lcld/desktop/home.jpg', 'projects/lcld/mobile/home.jpg') }}
+    </div>
+    <div class="grid__cell">
+        {{ fullPhone3up('#000', '#fff', 'projects/lcld/mobile/page.jpg', 'projects/lcld/mobile/page--nav.jpg', 'projects/lcld/mobile/map.jpg') }}
+    </div>
+    <div class="grid__cell grid__cell--content grid__cell--centered">
+        <a href="https://www.teamcolab.com/portfolio/lcld/" >View Full Case Study</a>
+    </div>
+</section>
+
+<div class="content container">
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
+</div>
+
+{% endblock %}

@@ -1,23 +1,23 @@
 {% extends '_layouts/application.html' %} 
 {% block body %}
-    {% for project in projects %}
-    {% if project.enabled %}
-    <div data-slug="{{project.slug}}" class="project-image" style="background-image: url({{project.featuredImg}}.jpg)"></div>
-    {% endif %}
-    {% endfor %}
+    <div class="project-image-wrap">
+        {% for project in projects %}
+        {% if project.enabled %}
+        <div data-slug="{{project.slug}}" class="project-image" style="background-image: url({{project.featuredImg}}.jpg)"></div>
+        {% endif %}
+        {% endfor %}
+    </div>
 {% endblock %}
 {% block content %}
 
-
-
 <div class="content container">
     
-    <p>Hi,<br> I'm a front-end designer who thrives on being a part of projects through their entire life-cycle. I conceptualize, strategize, design, and build digital products and solutions.</p>
+    <p>Hi,<br> I'm a front-end designer who thrives on being a part of projects through their entire life-cycle. I conceptualize, strategize, design, and build digital products and solutions. If you'd like to chat, just shoot me an email at <a href="mailto:hi@johnheiner.com" >hi@johnheiner.com</a>.</p>
 
-    <p>I live in Richmond, Virginia with my wife and daughter where I work as a designer and developer at COLAB. If you'd like to chat, just shoot me an email at <a href="mailto:hi@johnheiner.com" class="underlined default">hi@johnheiner.com</a></p>
+    <p>I live in Richmond, Virginia with my wife and daughter where I work as a designer and developer at COLAB. View a selection of my work below, or learn more <a href="/about">about me</a>.</p>
 
-    {# <h2>Projects</h2>
-    {% include "_shared/project-list.html" %} #}
+    <h2>Projects</h2>
+    {% include "_shared/project-list.html" %}
     
 </div>
 
